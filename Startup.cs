@@ -19,6 +19,11 @@ namespace BackEnd
         {
             // Add services, dependencies, and middleware here
             services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                // Configure Swagger options if needed
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
